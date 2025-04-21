@@ -7,7 +7,7 @@ const rollHistoryEl = document.getElementById("roll-history");
 let historyList = [];
 
 function rollDice(){
-    const rollResult = Math.floor(Math.random() * 6) ;
+    const rollResult = Math.floor(Math.random() * 6)+1 ;
     const diceFace = getDiceFace(rollResult);
     diceEl.innerHTML = diceFace;
     historyList.push(rollResult)
